@@ -1,0 +1,201 @@
+<html>
+<head>
+<title>CSS Website Layout</title>
+
+<style>
+    *{
+     box-sizing: border-box;
+     }
+ body {
+ 	  font-family: Arial;
+ 	  padding: 10px;
+ 	  background: # Thistle;
+ 	  margin: 0;
+ }
+/* Header/Blog Title */
+.header {
+	background-image: url(daun.jpg.jpg);
+	padding: 55px;
+	text-align: center;
+	color:white;
+}
+.header h1 {
+	font-size: 50px;
+}
+/* style the top navigation bar*/
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+/* atyle the topnav link */
+.topnav a {
+	float: Left;
+	display: block;
+	color: lightgrey;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+/* change color on hover */
+.topnav a:hover {
+	background-color: white;
+	color: black;
+}
+/* create two unequal columns that floats to each other */
+/* Left column */
+.leftcolumn {
+	float: Left;
+	width: 75%;
+}
+/*Right column */
+.rightcolumn {
+	float: Left;
+	width: 25%;
+    background-color: white;
+    padding-left: 20px;
+}
+/* fake image */
+.fakeimg {
+	background-color: white;
+	width: 100px;
+	padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+	background-color: lightgrey;
+	padding: 20px;
+	margin-top: 20px;
+}
+/* clear floats after the columns */
+.row: after {
+   content: "";
+   display: table;
+   clear: both;
+}
+/* footer */
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: white;
+	margin-top: 20px;
+}
+/*Responsive layout - when the screen is less than800px wide, make the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 500px) {
+ 	.leftcolumn, .rightcolumn {
+ 		width: 100%;
+ 		padding: 0;
+ 	}
+ }
+ /* Responsive layout - when the screen is less than 400px wide, make the navigation lik stack on to of each other instead of next to each other */
+ @media screen and (max-width: 500px) {
+    .topnav a {
+    	float: none;
+    	width: 100p%;
+    }
+}
+</style>
+</head>
+<body>
+
+	<div class="header">
+		<h1>My Website</h1>
+		<p> Resize the browser window to se the effect.</p>
+	</div>
+
+    <div class="topnav">
+    	<a href="#">Link</a>
+    	<a href="#">Link</a>
+    	<a href="#">Link</a>
+    	<a href="#" style="float:right">Link</a>
+    </div>
+              <div class="row">
+              	<div class="leftcolumn">
+              		<div class="card">
+                <h5>rabu 4 juni 2024</h5>
+                <h3>ABOUT PLANTS.</h3>
+    			<img src="E:\pwpb index\bunga.jpg.jpg"height="300px"width="100%">
+    			<p>Kata “bunga” berasal dari bahasa Perancis kuno yaitu flo(u), dan bahasa Latin yaitu florem atau flos. Bunga adalah organ reproduksi pada tumbuhan, dikenal pula sebagai Angiospermae yang tumbuh pada tangkai</p>
+    		</div>
+    
+    		<div class="card">
+    			<h4>SAKURA CANTIK</h4>
+    			
+    			<img src="E:\pwpb index\daun5.jpg.jpg"height="400px"width="100%">
+    			<p></p>
+    			<p>Sakura adalah sebutan untuk bunga yang tumbuh dari pohon bergenus Prunus maupun subgenusnya, Cerasus. Genus tersebut merupakan genus pepohonan yang umum dijumpai di Asia Timur, seperti Tiongkok, Korea, dan terutama Jepang. Istilah "sakura" sendiri merujuk kepada pohon ceri hias, dan bukan pohon ceri yang dimanfaatkan buahnya untuk dimakan[1]. Sakura, bersama dengan bunga seruni, adalah bunga yang dikenal sebagai bunga nasional Jepang[2]. Bunga ini mekar pada musim semi, yaitu sekitar akhir Maret hingga akhir Juni.
+
+Sakura dapat terlihat di mana-mana di Jepang, diperlihatkan dalam beraneka ragam barang-barang konsumen, termasuk kimono, alat-alat tulis, dan peralatan dapur. Bagi orang Jepang, sakura merupakan simbol penting, yang kerap kali diasosiasikan dengan perempuan, kehidupan, kematian, serta juga merupakan simbol untuk mengeksperesikan ikatan antarmanusia, keberanian, kesedihan, dan kegembiraan. Sakura juga menjadi metafora untuk ciri-ciri kehidupan yang tidak kekal..</p>
+    		</div>
+
+        <div class="card">
+          <h4>MAWAR MERAH</h4>
+          
+          <img src="E:\pwpb index\mawar.jpg"height="400px"width="100%">
+          <p></p>
+          <p>telah diketahui bahwa arti bunga mawar merah melambangkan romantisme, cinta, keindahan, dan keberanian. Mawar merah tanpa duri berarti cinta pada pandangan pertama. Sementara itu, mawar merah yang berubah menjadi kuning melambangkan persahabatan dan kegembiraan, serta awal yang baru.</p>
+        </div>
+
+        <div class="card">
+          <h4>MAWAR PUTIH</h4>
+         
+          <img src="E:\pwpb index\mar putih.jpg"height="400px"width="100%">
+          <p></p>
+          <p>Mawar putih adalah simbol kemurnian dan kedamaian. Mereka mengekspresikan perasaan tulus dan suci. Selain itu, mawar putih juga digunakan sebagai lambang simpati dalam situasi duka cita</p>
+        </div>
+
+        <div class="card">
+          <h4>BUNGA MELATI</h4>
+          
+          <img src="E:\pwpb index\melati.jpg"height="400px"width="100%">
+          <p></p>
+          <p>bunga melati identik dengan harumnya yang sangat wani,bunga ini pun berwarna putih cerah</p>
+        </div>
+    	</div>
+    	<div class="rightcolumn">
+    		<div class="card">
+    			<h2>About him</h2>
+          <h5>rabu 08 februari 2006</h5>
+    			<img src="E:\pwpb index\IMG20240319114431.jpg"height="200px"width="100%">
+    			<p>haiii haiii!!!
+            nama saya vera....
+          saya membuat web tentang bunga karna saya menyukai bunga,saya juga sangat suka ketika ada yang memberi bunga,namun sayangnya belum ada satu orang pun yang memberi saya bunga HAHAHAHAHAH.</p>
+    		</div>
+    		<div class="card">
+    			<h3>Popular post</h3>
+    			<img src="E:\vera PWPB 2\1000141832.jpg"200px"width="100%">
+    			<img src="E:\vera PWPB 2\1000141832.jpg"200px"width="100%">
+    			<img src="E:\vera PWPB 2\1000141832.jpg"200px"width="100%">
+    			</div>
+    		<div class="card">
+    			<h3>Follow Me</h3>
+    			<p>Some text..</p>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="footer">
+    	<h2>Footer</h2>
+      <p> Copyright &copy; 2024 VERA PEBRIYANI. ALL right reserved.</p>
+    </div>
+
+  </body>
+  </html>
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class="header">
+	<h1>Header</h1>
+</div>
+  <div class="topnav">
+  	<a href="#">Link</a>
+  	<a href="#">Link</a>
+  	<a href="#">Link</a>
+</body>
+</html>
+
